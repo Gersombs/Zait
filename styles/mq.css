@@ -49,6 +49,9 @@
     .section__text {
       margin: 0 auto 2rem;
     }
+    .up{
+      right: -95%;
+    }
     #menu-nav{
       scroll-snap-align: start;
     }
@@ -59,13 +62,27 @@
     scroll-behavior: smooth;
     scroll-snap-type: none;
 }
+  footer{
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    margin: 10px 0;
+  }
   #profile {
     height: 83vh;
     margin-bottom: 0;
   }
 
   #contacto-formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
+    box-sizing: border-box;
+    padding-left: 0px;
+    position: relative;
+    min-width: 300px;
   }
   #contacto-formulario textarea, #contacto-formulario h4 {    
   display: none;
@@ -73,7 +90,24 @@
 
   /* Apply max-width to all inputs except those with id "button" or type "submit" */
   input:not(#button):not([type="submit"]) {
-    max-width: min-content;
+    width: 200px;
+    display: block;
+    margin-top: 10px; 
+    position: relative;
+    display: flex;
+  }
+  footer {
+    width: 100%;
+    text-align: center;
+  }
+
+  footer .nav_links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .5rem;
+    text-align: center;
+    list-style: none;
+    padding: 0;
   }
 
   section {
@@ -83,10 +117,13 @@
   article {
     font-size: 1rem;
   }
-  footer nav {
-    height: fit-content;
+
+  .contact-container form {
     width: 100%;
-    margin-bottom: 2rem;
+  }
+  .contact-container form #lastName,
+  .contact-container form #mobile {
+    margin-left: 0px;
   }
     .about-containers,
     .contact-container,
@@ -95,6 +132,7 @@
     }
     .contact-container {
       margin: 0;
+      max-width: 100%;
     }
     .contact-container p,
     .nav-links li a {
