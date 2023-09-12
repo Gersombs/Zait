@@ -49,6 +49,9 @@
     .section__text {
       margin: 0 auto 2rem;
     }
+    #menu-nav{
+      scroll-snap-align: start;
+    }
 }
   
 @media screen and (max-width: 600px) {
