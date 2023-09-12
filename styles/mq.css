@@ -75,12 +75,7 @@
 
   #contacto-formulario{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    box-sizing: border-box;
-    padding-left: 0px;
+    width: auto;
     position: relative;
     min-width: 300px;
   }
@@ -90,12 +85,14 @@
 
   /* Apply max-width to all inputs except those with id "button" or type "submit" */
   input:not(#button):not([type="submit"]) {
-    width: 200px;
-    display: block;
-    margin-top: 10px; 
-    position: relative;
     display: flex;
-  }
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: auto;
+  } 
+
   footer {
     width: 100%;
     text-align: center;
@@ -117,13 +114,9 @@
   article {
     font-size: 1rem;
   }
-
-  .contact-container form {
-    width: 100%;
-  }
   .contact-container form #lastName,
   .contact-container form #mobile {
-    margin-left: 0px;
+    margin-left: 10px;
   }
     .about-containers,
     .contact-container,
