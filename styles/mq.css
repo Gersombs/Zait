@@ -55,9 +55,10 @@
 }
   
 @media screen and (max-width: 600px) {
-  #contacto, footer {
-    height: 18vh;
-  }
+  html {
+    scroll-behavior: smooth;
+    scroll-snap-type: none;
+}
   #profile {
     height: 83vh;
     margin-bottom: 0;
@@ -75,11 +76,16 @@
     max-width: min-content;
   }
 
+  section {
+    margin-top: 1.5rem;
+  }
+
   article {
     font-size: 1rem;
   }
   footer nav {
     height: fit-content;
+    width: 100%;
     margin-bottom: 2rem;
   }
     .about-containers,
@@ -121,6 +127,9 @@
     }
     .section__pic-container {
       margin-top: 5rem;
+    }
+    .up{
+      right: -90%;
     }
     #menu-nav{
       scroll-snap-align: start;
