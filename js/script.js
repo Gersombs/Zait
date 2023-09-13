@@ -74,3 +74,12 @@ mobileInput.addEventListener("input", function () {
   // Asignar el valor limpio nuevamente al campo de teléfono
   mobileInput.value = valorTelefono;
 });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const formulario = document.getElementById('contacto-formulario');
+    formulario.addEventListener('submit', function(event) {
+      // Reiniciar el formulario.
+      formulario.reset();
+    });
+  });
+
